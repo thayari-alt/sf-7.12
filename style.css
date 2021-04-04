@@ -386,6 +386,7 @@ p {
   max-width: 540px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 60px;
 }
 
 .form__input {
