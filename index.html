@@ -178,20 +178,20 @@
       </div>
     </div>
   </footer>
+  <script>
+    const addProjectReaction = () => {
+      const el = document.createElement("div");
+      el.className = 'project__item-active';
+      el.innerHTML = '<img src="./img/eye-icon.svg" alt="">';
+  
+      const projectItems = document.querySelectorAll('.project__item');
+      projectItems.forEach(element => {
+        element.addEventListener('mouseenter', () => element.insertAdjacentElement('beforeend', el));
+        element.addEventListener('mouseleave', () => el.remove());
+      });
+    }
+  
+    document.addEventListener("DOMContentLoaded", addProjectReaction);
+  </script>
 </body>
-<script type="text/javascript">
-  const addProjectReaction = () => {
-    const el = document.createElement("div");
-    el.className = 'project__item-active';
-    el.innerHTML = '<img src="./img/eye-icon.svg" alt="">';
-
-    const projectItems = document.querySelectorAll('.project__item');
-    projectItems.forEach(element => {
-      element.addEventListener('mouseenter', () => element.insertAdjacentElement('beforeend', el));
-      element.addEventListener('mouseleave', () => el.remove());
-    });
-  }
-
-  document.addEventListener("DOMContentLoaded", addProjectReaction);
-</script>
 </html>
