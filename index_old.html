@@ -156,10 +156,10 @@
       <div class="wrapper">
         <h2>Хотите веб-сайт?</h2>
         <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и веб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-        <form class="form">
+        <form class="form" action="">
           <input class="form__input" type="text" placeholder="Ваше имя">
           <input class="form__input" type="email" placeholder="Ваш email">
-          <textarea class="form__input form__textarea" placeholder="Сообщение" cols="30" rows="10"></textarea>
+          <textarea class="form__input form__textarea" placeholder="Сообщение" name="" id="" cols="30" rows="10"></textarea>
           <button class="button" type="submit">Отправить</button>
         </form>
       </div>
@@ -179,7 +179,7 @@
     </div>
   </footer>
 </body>
-<script type="text/javascript">
+<script>
   const addProjectReaction = () => {
     const el = document.createElement("div");
     el.className = 'project__item-active';
